@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RPG - Dragon Repeller</title>
+  </head>
+  <body>
+    <body>
+        <div class="container">
+            <header>
+                <img src="assets/monster-removebg-preview.png" alt="Monster characters" class="header-image">
+                <h1>Alatera Adventure RPG</h1>
+            </header>       
+            <div id="game-area">
+                <div id="stats">
+                    <span class="stat">XP: <strong id="xpText">0</strong></span>
+                    <span class="stat">Mana: <strong id="manaText">20</strong></span>
+                    <span class="stat">Health: <strong id="healthText">100</strong></span>
+                    <span class="stat">Gold: <strong id="goldText">50</strong></span>
+
+                </div>
+                <div id="controls">
+                    <button id="button1">Go to store</button>
+                    <button id="button2">Go to cave</button>
+                    <button id="button3">Fight monster</button>
+
+
+                </div>
+                <div id="monsterStats">
+                    <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+                    <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+                </div>
+                <div id="text">Welcome young adventurer! You are in the town square. Where do you want to go?</div>
+                <div id="controls">
+
+                    <button id="button4">Settings</button>
+                    <button id="button5">Open inventory</button>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <script src="js/script.js"></script>
+  </body>
+</html>

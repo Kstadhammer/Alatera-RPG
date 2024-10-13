@@ -1,4 +1,3 @@
-// weapons.js
 export const weapons = [
     { name: 'stick', power: 5 },
     { name: 'dagger', power: 30 },

@@ -1,4 +1,3 @@
-// main.js
 import { weapons } from './weapons.js';
 import { monsters } from './monsters.js';
 import { potions } from './potions.js';
@@ -33,7 +32,42 @@ const locations = [
     "button functions": [goStore, goCave, fightMonster],
     text: "You are in the town square. You see a sign that says \"Store\"."
   },
-  // ... rest of the locations ...
+  {
+    name: "store",
+    "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
+    "button functions": [buyHealth, buyWeapon, goTown],
+    text: "You enter the store."
+  },
+  {
+    name: "cave",
+    "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
+    "button functions": [fightSlime, fightBeast, goTown],
+    text: "You enter the cave. You see some monsters."
+  },
+  {
+    name: "fight",
+    "button text": ["Attack", "Dodge", "Run"],
+    "button functions": [attack, dodge, goTown],
+    text: "You are fighting a monster."
+  },
+  {
+    name: "kill monster",
+    "button text": ["Go to town square", "Go to town square", "Go to town square"],
+    "button functions": [goTown, goTown, goTown],
+    text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+  },
+  {
+    name: "lose",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You die. ☠️"
+  },
+  { 
+    name: "win", 
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
+    "button functions": [restart, restart, restart], 
+    text: "You defeat the monster! YOU WIN THE GAME! 🎉" 
+  }
 ];
 
 // initialize buttons
@@ -41,7 +75,6 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightMonster;
 button4.onclick = openSettings;
-button5.onclick = openInventory;
 
 function update(location) {
   monsterStats.style.display = "none";
@@ -72,40 +105,53 @@ function fightMonster() {
 }
 
 function buyHealth() {
+  // Implementation needed
 }
 
 function buyMana() {
+  // Implementation needed
 }
 
 function buyWeapon() {
+  // Implementation needed
 }
 
 function fightSlime() {
+  // Implementation needed
 }
 
 function fightBeast() {
+  // Implementation needed
 }
 
 function attack() {
+  // Implementation needed
 }
 
 function dodge() {
+  // Implementation needed
 }
 
 function defeatMonster() {
+  // Implementation needed
 }
 
 function lose() {
+  // Implementation needed
 }
 
 function winGame() {
+  // Implementation needed
 }
 
 function restart() {
+  // Implementation needed
 }
 
 function openSettings() {
+  // Implementation needed
 }
 
 function openInventory() {
+  // Implementation needed
 }

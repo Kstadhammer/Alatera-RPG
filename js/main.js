@@ -2,6 +2,7 @@
 import { weapons } from './weapons.js';
 import { monsters } from './monsters.js';
 import { potions } from './potions.js';
+import { settings } from './settings.js';
 
 // Game state variables
 let xp = 0;
@@ -52,8 +53,8 @@ const locations = [
     },
     {
       name: "cave",
-      "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
-      "button functions": [fightSlime, fightBeast, goTown],
+      "button text": ["Fight monster", "Light your torch", "Go to town square"],
+      "button functions": [fightMonster, lightTorch, goTown],
       text: "You enter the cave. You see some monsters."
     },
     {
@@ -134,19 +135,14 @@ function buyHealth() {
 function buyMana() {
   // Implementation needed
 }
+function lightTorch() {
+  // Implementation needed
+}
 
 function buyWeapon() {
   // Implementation needed
 }
 
-// Monster-specific fight functions
-function fightSlime() {
-  // Implementation needed
-}
-
-function fightBeast() {
-  // Implementation needed
-}
 
 // Game state functions
 function defeatMonster() {

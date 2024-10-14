@@ -88,6 +88,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightMonster;
 button4.onclick = openSettings;
+button5.onclick = openInventory
 
 // Core game functions
 function update(location) {
